@@ -30,7 +30,7 @@ Mitigation: Provide training and offer ongoing support and create a feedback loo
 ~ The system may experience downtime affecting of students to schedule appointments
 Mitigation: Regularly monitor system performance and conduct maintenance during off-peak hours.
 
-Technology Stack
-•	Frontend : React.js - It is popular for building dynamic and responsive user interfaces with a component-based architecture, making the code easier to maintain
-•	Backend : Node.js - It is efficient for handling real-time operations and I/O-bound tasks which makes it perfect for scheduling system that requires quick updates and notifications.
-•	Database : PostgreSQL - It is highy reliable and has strong community support.
+## Technology Stack
+- **Frontend : React.js** - It is popular for building dynamic and responsive user interfaces with a component-based architecture, making the code easier to maintain.
+- **Backend : Node.js** - It is efficient for handling real-time operations and I/O-bound tasks which makes it perfect for scheduling system that requires quick updates and notifications.
+- **Database : PostgreSQL** - It is highy reliable and has strong community support.
