@@ -1,6 +1,6 @@
 ## Software Product Management Plan
 
-    **Team Members & Roles**
+    Team Members & Roles
 1.	Ms M. Mabapa – Project Manager
 2.	Ms L. Marumo – Researcher
 3.	Ms S Bopape – Developer
@@ -23,6 +23,7 @@
 | **Scalability Issues** | Design the system with scalability in mind and conduct load testing to ensure the system can handle peak usage times |
 | **User Adoption and Training** | Provide training and offer ongoing support and create a feedback loop to address user concern and improve the system based on their input |
 | **System downtime and Reliability** | Regularly monitor system performance and conduct maintenance during off-peak hours |
+| **Technical Support & Maintainance** | Ensure there are clear protocols for reporting and resolving technical issues promptly |
 
 ## Technology Stack
 - **Frontend : React.js** - It is popular for building dynamic and responsive user interfaces with a component-based architecture, making the code easier to maintain.
