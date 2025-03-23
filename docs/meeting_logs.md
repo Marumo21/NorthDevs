@@ -28,6 +28,42 @@
        Date : 22 March 2025
        Vanue : Online
        Time : 10:00
--Review and wireframe
+-Review wireframe
 -Proof read documents 
 - Submit Phase 1
+
+## Meeting 2 : Start meeting
+      Date : 22 March 2025
+      Time : 10:00
+     Venue : Online(Zoom)  
+Attendance : MS.BOPAPE,M.Mabapa,L.Marumo,T.Lebenya
+    Absent : None
+
+## Agenda And Topics Discussed
+1.	Proof Read documents
+2.	Decide which wireframe to use
+3.	Upload files in the correct folder on Github
+4.	Assigned a specific day for team meetings
+   
+
+## Decisions Made
+
+1. Edit a table for Risks & Mitigations
+2. Add Lecturer's wireframe & prototype on the choosen wireframe
+3. Rewrite the UI flow
+
+## Action Items & Assignments
+
+- **Rewrite the UI flow** – MS.BOPAPE
+- **Design lecuturer wireframe and prototype** – M.Mabapa & L.Marumo
+- **Edit the software management plan** – T.Lebenya
+
+## Next Meeting & Steps
+       Date : 31 March 2025
+       Vanue : Online
+       Time : 16:00
+
+- Discuss Phase 2 and Brainstorm ideas.
+
+     
+      
