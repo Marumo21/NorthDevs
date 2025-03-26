@@ -2,15 +2,15 @@
 
 ## 1. User Type Selection Page
 - **User Action**:
--  Select if student or lecturer
--  **Navigation**:
--  Follows the page of student if student is selected and follows page of lecturer if lecturer is selected
+  -  Select if student or lecturer
+- **Navigation**:
+    -  Follows the page of student if student is selected and follows page of lecturer if lecturer is selected
 ## 2. Login Screen
 - **User Action**:
--  Enter student number and password, then tap "Login."
+  -  Enter student number and password, then tap "Login."
 - **Navigation**:
-  - Successful login -> Home Screen.
-  - Failed login -> Show error message.
+   - Successful login -> Home Screen.
+   - Failed login -> Show error message.
 
 ### 2. Home Screen
 - **User Action**:
@@ -21,7 +21,7 @@
 ### 3. List of lecturer page
  - **User Action**:
    - Request appointment or message lecturer
-- **Navigation**:
+ - **Navigation**:
     - Navigate to appointment page or message page
 ## 4. Message Page
 - **User Action**:
