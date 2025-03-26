@@ -62,6 +62,6 @@
  - **User Action**:
     - Click appointment button
   - **Navigation**:
-    - Navigate to liat of appointments
+    - Navigate to list of appointments
 
     
