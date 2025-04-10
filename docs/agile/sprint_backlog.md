@@ -16,7 +16,7 @@ Develop core features for student appointment booking, lecturer availability tra
 | **Task**           |Assigned To |  Est. Time | **Status**|
 |-------             |---              |---             |---        |
 |Design booking calendar UI|Mpho|6|To Do|
-|Implement time slot selection logic|Marumoo|8|To Do|
+|Implement time slot selection logic|Marumo|8|To Do|
 |Prevent double bookings|Teboho|6|To Do|
 |Integrate Google Maps API|Matsie|8|To Do|
 |Fetch and display office locations|Matsie|4|To Do|
