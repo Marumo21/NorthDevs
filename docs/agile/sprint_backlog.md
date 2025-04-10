@@ -5,7 +5,7 @@ Develop core features for student appointment booking, lecturer availability tra
 
 | **Task**           |Assigned To |  Est. Time | **Status**|
 |-------             |---              |---             |---        |
-|Implement Firebase authorisation for students| Mpho| 6 |To Do|
+|Implement Firebase authorization for students| Mpho| 6 |To Do|
 |Design login/registration UI|Marumo| 4| In Progress|
 |Add email verification|Teboho|3|To Do|
 |Create availability input form|Teboho|8|To Do|
@@ -16,7 +16,7 @@ Develop core features for student appointment booking, lecturer availability tra
 | **Task**           |Assigned To |  Est. Time | **Status**|
 |-------             |---              |---             |---        |
 |Design booking calendar UI|Mpho|6|To Do|
-|Implement time slot selection logic|Lerato|8|To Do|
+|Implement time slot selection logic|Marumoo|8|To Do|
 |Prevent double bookings|Teboho|6|To Do|
 |Integrate Google Maps API|Matsie|8|To Do|
 |Fetch and display office locations|Matsie|4|To Do|
