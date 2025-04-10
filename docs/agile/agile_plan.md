@@ -18,19 +18,19 @@ It’s designed to make life easier for both students and lecturers by improving
 
 ## Roles and Responsibilities
 
-- **Project Manager**: **Mabapa MM**  
+- **Project Manager**: **Ms M. Mabapa**  
 Oversees the overall progress of the project, keeps the team aligned with deadlines, and ensures deliverables are met.
 Handles team coordination and ensures we stick to our goals for each sprint.
 
-- **Researcher**: **Marumo M**  
+- **Researcher**: **Ms M. Marumo**  
  Gathers relevant information, tools, and technologies (e.g., GPS APIs, indoor navigation systems, IoT sensors) that support our system.
 Helps identify user needs and best practices for implementing our core features.
 
-- **Tester**: **Tebogo**  
+- **Tester**: **Mr T. Lebenya**  
   Responsible for software testing, debugging, and quality assurance. Ensures the webapp runs smoothly and reports issues found during testing.
   Makes sure the system works smoothly and meets user expectations. Also helps with writing and maintaining testing documentation.
 
-- **Developer**: **Bopape MS**  
+- **Developer**: **Ms MS. Bopape**  
   Focuses on designing and coding both the frontend and backend of the system. Handles database connections, user interfaces, feature integration, and ensures
    that everything is functioning as expected from a technical point of view.
 
@@ -38,11 +38,11 @@ Helps identify user needs and best practices for implementing our core features.
 
 ## Sprint Schedule
 
-- **Sprint Duration**: 2 weeks  
-- **Total Number of Sprints**: 3  
-  - **Sprint 1**: Week –5  
-  - **Sprint 2**: Week 6–7  
-  - **Sprint 3**: Week 8–9  
+- **Sprint Duration**: 1 week  
+- **Total Number of Sprints in Phase 2**: 3  
+  - **Sprint 1**: Week 4  
+  - **Sprint 2**: Week 5  
+  - **Sprint 3**: Week 6  
 
 ### Meetings
 - **Daily Check-ins**: 12:00 AM on WhatsApp  
@@ -59,7 +59,3 @@ Helps identify user needs and best practices for implementing our core features.
 | **GitHub**      | Source control, issue tracking, and project board management |
 | **WhatsApp**    | Quick team check-ins and day-to-day updates                  |
 | **Teams** | Weekly meetings, sprint reviews, and retrospectives Shared documentation and collaborative note-taking |
-
-
----
-
