@@ -3,7 +3,7 @@
     Team Members & Roles
 1.	Ms M. Mabapa – Project Manager
 2.	Ms M. Matome– Researcher
-3.	Ms M. Bopape – Developer
+3.	Ms MS. Bopape – Developer
 4.	Mr T. Lebenya – Tester 
 
 ## Project Time line
