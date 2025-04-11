@@ -40,9 +40,9 @@ Helps identify user needs and best practices for implementing our core features.
 
 - **Sprint Duration**: 1 week  
 - **Total Number of Sprints in Phase 2**: 3  
-  - **Sprint 1**: Week 4  
-  - **Sprint 2**: Week 5  
-  - **Sprint 3**: Week 6  
+  - **Sprint 1**: 22 March 2025 
+  - **Sprint 2**: 25 March 2025
+  - **Sprint 3**: 1 April 2025
 
 ### Meetings
 - **Daily Check-ins**: 12:00 AM on WhatsApp  
