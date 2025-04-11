@@ -2,8 +2,11 @@
 ## Stand-up : March 22 2025
 
    **Mpho** : Finalizing firebase restrictions which courses platform limitations.
+   
    **Matsie** : Implementing exponential backoff for API retries to handle rate limits smoothly.
+   
    **Teboho** : Working on middleware checks to block unverified users.
+   
   **Marumo**: Working on the Phototype with tools like Figma 
 
 ## Stand-Up : March 25 2025
