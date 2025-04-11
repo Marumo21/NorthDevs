@@ -12,13 +12,20 @@
 ## Stand-Up : March 25 2025
    
    **Marumo**: Facing mobile responsiveness issues
+   
    **Mpho**: Working on Third-party auth provider limitations
+   
   **Matsie**: Faxing event duplication issues if syncs run too frequently.
  
 ## Stand-Up : Aplril 1 2025
    **Marumo**: Fixed Mobile responsiveness issues
+   
    **Teboho**: Facing Data overload issues
+   
   **Mpho**: Completed Third-party auth provider limitations
+  
  **Matsie**: Writing unit tests for fixes to prevent regression
+ 
  **Marumo**: Working on spam complaims if notifications are too frequent
+ 
   **Mpho**: Optimizing break functionality.
