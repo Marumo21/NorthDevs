@@ -17,7 +17,7 @@
    
   **Matsie**: Faxing event duplication issues if syncs run too frequently.
  
-## Stand-Up : Aplril 1 2025
+## Stand-Up : April 1 2025
    **Marumo**: Fixed Mobile responsiveness issues
    
    **Teboho**: Facing Data overload issues
