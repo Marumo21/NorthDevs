@@ -1,0 +1,326 @@
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #383737;
+}
+
+header h1 {
+    color: #8e0000;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.faculty {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.support {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Screen Management */
+.screen {
+    display: none;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.screen.active {
+    display: block;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Button Styles */
+.btn {
+    background-color: #a0a0a0;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #6b6a6a;
+}
+
+.action-btn {
+    padding: 5px 10px;
+    margin: 0 5px;
+    font-size: 0.9rem;
+}
+
+.appointment-btn {
+    background-color: #8e0000;
+}
+
+.message-btn {
+    background-color: #0066cc;
+}
+
+.search-btn {
+    background-color: #333;
+    padding: 10px 15px;
+}
+
+
+/* Search Box */
+.search-box {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-size: 1rem;
+}
+
+.search-box button {
+    border-radius: 0 4px 4px 0;
+}
+
+/* User Type Selection */
+.user-type-selection {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.user-type-selection h2 {
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #8e0000;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Message Styles */
+.message-list {
+    margin-bottom: 20px;
+}
+
+.message {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.message.active {
+    background-color: #f0f0f0;
+}
+
+.message:hover {
+    background-color: #f9f9f9;
+}
+
+.sender {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.content {
+    color: #666;
+}
+
+.message-compose textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    min-height: 100px;
+    margin-bottom: 10px;
+}
+
+/* Calendar Styles */
+.calendar {
+    margin-bottom: 30px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.calendar-weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.calendar-days div {
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.calendar-days div:hover {
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.calendar-days .empty {
+    background-color: transparent;
+    cursor: default;
+}
+
+.calendar-days .has-appointment {
+    background-color: #ffebee;
+    font-weight: bold;
+}
+
+/* Time Slots */
+.time-slots {
+    margin-bottom: 20px;
+}
+
+.time-slots h3 {
+    margin-bottom: 15px;
+}
+
+.slot-options {
+    display: flex;
+    gap: 10px;
+}
+
+.time-slot {
+    padding: 8px 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.time-slot:hover {
+    background-color: #e0e0e0;
+}
+
+.time-slot.selected {
+    background-color: #8e0000;
+    color: white;
+}
+
+/* Success Messages */
+.success-message {
+    font-size: 1.2rem;
+    color: #2e7d32;
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.error-message {
+    color: #c62828;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .screen {
+        padding: 15px;
+    }
+    
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
