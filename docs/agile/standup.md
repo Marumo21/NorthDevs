@@ -29,3 +29,16 @@
  **Marumo**: Working on spam complaims if notifications are too frequent
  
   **Mpho**: Optimizing break functionality.
+
+  ## Stand-Up : April 3 2025
+  
+   **Marumo**: Started changing how notifications are shown.
+   
+   **Teboho**: Still trying to fix the system slowing down when there's too much data.
+   
+  **Mpho**: Collaborating with Teboho to simulate high data traffic for testing rate limiting.
+  
+ **Matsie**: Finished writing unit tests for fixes to prevent regression.
+ 
+ **Marumo**:Tested different screen sizes to make sure everything fits properly.
+ 
