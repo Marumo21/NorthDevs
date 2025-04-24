@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Confirmation - WSU</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        header {
+            background-color: #981e32;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .logo {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .confirmation-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 3rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+        
+        .confirmation-icon {
+            font-size: 4rem;
+            color: #4CAF50;
+            margin-bottom: 1.5rem;
+        }
+        
+        .confirmation-title {
+            font-size: 2rem;
+            color: #5a5a63;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        
+        .confirmation-message {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            color: #555;
+        }
+        
+        .lecturer-info {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            text-align: center;
+        }
+        
+        .lecturer-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #8a90ec;
+            margin-bottom: 0.5rem;
+        }
+        
+        .lecturer-contact {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            color: #666;
+            margin-bottom: 0.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .lecturer-contact a {
+            color: #8a90ec;
+            text-decoration: none;
+        }
+        
+        .lecturer-contact a:hover {
+            text-decoration: underline;
+        }
+        
+        .lecturer-office {
+            color: #666;
+            font-style: italic;
+        }
+        
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 0.8rem 2rem;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background-color: #8a90ec;
+            color: white;
+            border: none;
+        }
+        
+        .btn-primary:hover {
+            background-color: #8a90ec;
+        }
+        
+        .btn-secondary {
+            background-color: white;
+            color: #8a90ec;
+            border: 1px solid #8a90ec;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #f5f5f5;
+        }
+        
+        
+        @media (max-width: 600px) {
+            .confirmation-card {
+                padding: 2rem 1.5rem;
+            }
+            
+            .confirmation-title {
+                font-size: 1.8rem;
+            }
+            
+            .confirmation-message {
+                font-size: 1.1rem;
+            }
+            
+            .action-buttons {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+            
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="main-content">
+        <div class="confirmation-card">
+            <div class="confirmation-icon">✓</div>
+            <h1 class="confirmation-title">Congratulations!</h1>
+            <p class="confirmation-message">
+                <strong>Successfully Requested</strong><br>
+                You will receive booking confirmation via email
+            </p>
+            
+            <div class="lecturer-info">
+                <div class="lecturer-name">Dr. Sarah Johnson</div>
+                <div class="lecturer-contact">
+                    <a href="mailto:sjohnson@wsu.edu">sjohnson@wsu.edu</a> | 
+                    <a href="tel:5551234567">555-123-4567</a>
+                </div>
+                <div class="lecturer-office">Office: Science Building, Room 312</div>
+            </div>
+            
+            <div class="action-buttons">
+                <a href="list.html" class="btn btn-secondary">Back to Lecturers</a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
