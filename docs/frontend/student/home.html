@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WSU Student Portal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #ffffff;
+            color: #333;
+        }
+        
+        header {
+            background-color: #ffffff; /* WSU red color */
+            color: white;
+            padding: 2.2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            float: right;
+            padding-right: 5rem;
+        }
+        
+        .logo {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .search-bar {
+            display: flex;
+            max-width: 1000px;
+            margin-left: 6.7rem;
+            border-radius: 10px;
+            padding: 0.7rem;
+            background-color: rgb(207, 207, 207);
+            box-shadow: 0 2px 5px rgba(172, 172, 172, 0.1);
+        }
+        
+        .search-bar input {
+            flex-grow: 1;
+            padding: 0.5rem;
+            border: 1px solid #cecaca;
+            background-color: rgb(207, 207, 207);
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        header{
+            padding-left: 1.2rem;
+        }
+        
+        .search-bar button {
+            padding: 0.5rem 1rem;
+            background-color: #8a90ec;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            margin-left: 0.5rem;
+            cursor: pointer;
+        }
+
+        .user-info {
+            padding-bottom: 3.5rem;
+            padding-top: 14.5rem;
+            padding-left: 7.2rem;
+        }
+        
+        .main-content {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .welcome-message {
+            margin-bottom: 0.5rem;
+            margin-top: 2rem;
+            margin-left: 5rem;
+    
+
+        }
+     
+        .user-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 5.5rem;
+            padding: 5rem;
+            margin-right: 5rem;
+        }
+        
+        .option-card {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        
+        .option-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        footer {
+            background-color: #8a90ec;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 12rem;
+        }
+        img{
+        width: 200px;
+    }
+    a{
+        color: #333;
+        text-decoration: none;
+    }
+    </style>
+</head>
+<body>
+    <header>
+    <img src="logo.jpg" alt="Wsu logo">
+</header>
+        <div class="user-info">
+            <span><img src="photo.jpg" alt="photo"></span>
+            <span>User Name</span>
+        </div>
+
+    
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button>Search</button>
+    </div>
+    
+    <div class="main-content">
+        <div class="welcome-message">
+            <h2>Looking For</h2>
+        </div>
+        
+        <div class="user-options">
+            <div class="option-card"><a href="list.html">
+                <figure>
+                    <img src="photo.jpg" alt="photo">
+                    <figcaption>Lecturer</figcaption>
+                </figure>
+            </a>
+            </div>
+
+            <div class="option-card"><a href="request.html">
+                <figure>
+                    <img src="photo.jpg" alt="photo">
+                    <figcaption>HOD</figcaption>
+                </figure>
+                </a>
+            </div>
+
+            <div class="option-card"><a href="request.html">
+                <figure>
+                    <img src="photo.jpg" alt="photo">
+                    <figcaption>Secretary</figcaption>
+                </figure>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Walter Sisulu University<a href="login.html"></a> Student Portal. All rights reserved.</p>
+    </footer>
+</body>
+</html>
