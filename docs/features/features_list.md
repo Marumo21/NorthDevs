@@ -1,4 +1,4 @@
-## Must Have Features 
+## **Must Have Features** 
 ### **Core Scheduling & Booking**  
 - **User Authentication**  
   - Secure login for students, lecturers, and admin.  
