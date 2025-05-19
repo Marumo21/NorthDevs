@@ -1,5 +1,3 @@
-# Features List - Smart Lecturer Scheduling, Availability & Navigation System  
-
 ## **Must Have Features**  
 ### **Core Scheduling & Booking**  
 - **User Authentication**  
