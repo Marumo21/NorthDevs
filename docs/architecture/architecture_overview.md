@@ -1,5 +1,3 @@
-# System Architecture Overview for Smart Lecturer Scheduling, Availability & Navigation System
-
 ## Architectural Style
 **Layered Architecture with Microservices for Critical Components**
 
