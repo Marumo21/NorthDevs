@@ -45,12 +45,8 @@
 1. Lethabo logs in bleary-eyed and desperate  
 2. Discovers Dr. Khumalo’s mysterious “Mercy Slot” (8:00–8:15 AM)  
 3. Books it immediately while muttering “Please work please work...”  
-4. Receives confirmation with a chilling note: _“Bring coffee.”_  
-
-**Linked User Stories:**  
-- US-01: Emergency booking system  
-- US-07: Confirmation notifications  
-
+4. Receives confirmation with a chilling note: _“Bring coffee.”_
+   
 ## Scenario 2
 **Persona:** Dr. Sipho Dlamini (Lecturer stand-in)  
 **When:** Final exam grading week  
@@ -60,10 +56,6 @@
 3. Lethabo (The Panic Booker) receives: _“Prof. is currently fighting a dragon (your exam script). Try again later.”_  
 4. Admin Ms. Ndlovu logs it as: _“Best. Auto-reply. Ever.”_  
 
-**Linked User Stories:**  
-- US-11: Lecturer availability controls  
-- US-14: Automated status responses
-  
 ## Scenario 3 
 **Persona:** Admin   
 **When:** Routine system audit  
@@ -73,9 +65,6 @@
 3. Adds a verification step: “Upload a photo with today’s newspaper”  
 4. The account vanishes instantly. Suspicious right....  
 
-**Linked User Stories:**  
-- US-21: Account verification  
-- US-25: Security logging  
 
 ## Scenario 4
 **Persona:** Thando Mokoena (Student)  
@@ -86,11 +75,6 @@
 3. She receives a confirmation notification along with a digital campus map and office directions  
 4. On the day of the appointment, she checks his status as **“Available”** and attends the session on time  
 
-**Linked User Stories:**  
-- US-03: Search by department or lecturer  
-- US-07: Booking confirmation and directions  
-- US-10: Real-time status updates  
-
 
 ## Scenario 5
 **Persona:** Dr. Sipho Dlamini (Lecturer)  
@@ -99,9 +83,3 @@
 1. Dr. Dlamini logs in to view his personalized schedule and sees Thando’s new appointment request  
 2. He accepts the appointment and updates his status to **“Busy”**, preventing overlapping bookings  
 3. After the session, he sends Thando additional reading materials via the system’s messaging feature  
-
-**Linked User Stories:**  
-- US-09: Manage lecturer availability  
-- US-13: Prevent overlapping appointments  
-- US-18: Post-appointment communication  
-
