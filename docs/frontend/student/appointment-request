@@ -216,7 +216,7 @@
                     <textarea id="details" name="details" placeholder="Please provide any additional details about your appointment request..."></textarea>
                 </div>
                 
-                <button type="submit" class="submit-btn"><a href="confirmation.html">Appointment</a></button>
+                <button type="submit" class="submit-btn"><a href="confirmation-page.html">Appointment</a></button>
             </form>
         </div>
     </div>
