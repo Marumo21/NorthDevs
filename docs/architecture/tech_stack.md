@@ -84,10 +84,3 @@ Our logic is divided into distinct service modules for maintainability:
 - Supports Docker, Django, and PostgreSQL with ease  
 - Industry standard for cloud reliability and security  
 
-
-## Security Considerations
-
-- Dual authentication (Session + JWT)  
-- Role-based access control (Student, Lecturer, Admin)  
-- Encrypted sensitive data  
-- Full audit logging for bookings and changes  
