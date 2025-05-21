@@ -14,7 +14,7 @@ pragmatic design. Combined with Django REST Framework, it gives us everything we
 scalable backend API with less code and more built-in features.
 
 
-**Why we chose it because :**
+**We chose it because:**
 - Robust, secure, and scalable  
 - Comes with a powerful built-in admin dashboard  
 - REST API support with built-in session and token authentication  
@@ -25,7 +25,7 @@ scalable backend API with less code and more built-in features.
 We're keeping things fast, modular, and framework-free. Static HTML pages enhanced with JavaScript modules
 form the UI layer.
 
-**Why we chose it:**
+**We chose it because:**
 - Loads fast, especially helpful for students using campus Wi-Fi.
 - Easy to maintain, debug, and improve.
 - Doesn’t require React/Vue, keeping the learning curve low.
@@ -36,7 +36,7 @@ form the UI layer.
 PostgreSQL is a powerful, open-source relational database known for its reliability, scalability, and
 support for complex queries.
 
-**Why we chose it:**
+**We chose it because:**
 - Perfect for handling appointment data, user profiles, and relational logic.
 - Offers advanced features like indexing, foreign key constraints, and stored procedures.
 - Easily integrates with Django’s ORM.
@@ -45,7 +45,7 @@ support for complex queries.
 Redis is used to improve performance and responsiveness by caching frequent queries(e.g availability lookups) 
 and storing session data.
 
-**Why we chose it:**
+**We chose it because:**
 - Extremely fast in-memory data storage.
 - Reduces load on the main database.
 - Ideal for tracking user sessions, lecturer statuses, and real-time availability.
@@ -77,7 +77,7 @@ Our logic is divided into distinct service modules for maintainability:
 - **Staging:** Heroku (for testing and CI deployments)  
 - **Production:** AWS (EC2, S3, RDS for PostgreSQL)  
 
-**Why we chose it**
+**We chose it because**
 - Scalable infrastructure  
 - Supports Docker, Django, and PostgreSQL with ease  
 - Industry standard for cloud reliability and security  
