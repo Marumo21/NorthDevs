@@ -66,7 +66,6 @@ Handles communication between frontend and backend using Fetch API or AJAX calls
 - Session-based authentication  
 
 ## Service Layer (Internal Modules)
-
 Our logic is divided into distinct service modules for maintainability:
 
 - **Scheduling Service** – Appointment and calendar logic  
@@ -78,8 +77,7 @@ Our logic is divided into distinct service modules for maintainability:
 - **Staging:** Heroku (for testing and CI deployments)  
 - **Production:** AWS (EC2, S3, RDS for PostgreSQL)  
 
-**Why AWS?**
-
+**Why we chose it**
 - Scalable infrastructure  
 - Supports Docker, Django, and PostgreSQL with ease  
 - Industry standard for cloud reliability and security  
