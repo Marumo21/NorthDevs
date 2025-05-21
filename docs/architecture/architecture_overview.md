@@ -1,160 +1,185 @@
 ## Architectural Style
-**Layered Architecture with Microservices for Critical Components**
+## Implementation approach
 
-## Alternative Options Considered
-- **Monolithic Architecture**: 
-  - Pros: Simpler initial development, easier deployment
-  - Cons: Difficult to scale individual components, tight coupling between features
-- **Pure Microservices Architecture**:
-  - Pros: Highly scalable, independent deployment of services
-  - Cons: Complex orchestration, higher operational overhead for small team
-- **Serverless Architecture**:
-  - Pros: Automatic scaling, reduced infrastructure management
-  - Cons: Cold start latency, vendor lock-in concerns
+Based on the requirements outlined in the PRD, we'll design a web-based system using modern technologies that support real-time features, secure authentication, and responsive design. The system needs to handle two distinct user roles (students and lecturers) with different interfaces and capabilities.
 
-## Selected Approach
-We chose a **hybrid layered architecture** with microservices for critical components (scheduling engine, real-time availability) because:
-1. It provides clear separation of concerns matching our UI, business logic, and data layers
-2. Allows us to scale the scheduling components independently
-3. Maintains simplicity for less critical components
-4. Aligns with our team's expertise in Django and React
+### Key Technical Challenges
 
-## Trade-offs
-- **Accepted**: 
-  - Slightly higher complexity than pure monolithic
-  - Initial development overhead for service communication
-- **Rejected**:
-  - Full microservices complexity given our team size (4 developers)
-  - Monolithic limitations in scaling booking operations during peak times
+1. **User Role-Based Authentication**: Implementing secure, role-specific authentication for students and lecturers
+2. **Availability Management**: Complex calendar system to manage lecturer availability and prevent scheduling conflicts
+3. **Real-time Notifications**: Ensuring timely notifications for appointment requests, confirmations, and changes
+4. **Campus Navigation Integration**: Integrating mapping functionality with office locations
+5. **Messaging System**: Implementing secure, reliable communication between students and lecturers
+6. **Data Consistency**: Maintaining data integrity across appointment scheduling and calendar systems
 
-## Potential Architectural Issues
-1. **Synchronization Challenges**:
-   - Maintaining consistency between lecturer availability across services
-   - Potential race conditions in appointment booking
+### Technology Stack Selection
 
-2. **Performance Bottlenecks**:
-   - Database queries for real-time availability status
-   - Geospatial queries for office navigation
+**Frontend:**
+- **React.js**: For building interactive component-based UI with efficient rendering
+- **Tailwind CSS**: For responsive design and consistent styling
+- **Redux**: For state management across the application
+- **Socket.io (client)**: For real-time notifications and messaging
 
-3. **Integration Risks**:
-   - Calendar service integration with university systems
-   - Push notification reliability
+**Backend:**
+- **Node.js**: Server runtime environment for JavaScript
+- **Express.js**: Web framework for building robust APIs
+- **Socket.io (server)**: For implementing WebSockets for real-time features
+- **JWT**: For secure authentication and session management
 
-## High-Level Architecture Diagram
+**Database:**
+- **PostgreSQL**: Relational database for structured data and complex relationships
+- **Redis**: For caching and session management
 
-# Web Application Architecture Overview for Smart Lecturer Scheduling System
+**Mapping/Navigation:**
+- **Mapbox API**: For campus mapping and navigation with custom overlays
 
-## Revised Architectural Style
-**Layered Architecture with Service-Oriented Components**
+**Deployment:**
+- **Docker**: For containerization
+- **Nginx**: For serving static assets and load balancing
+- **AWS/Azure/GCP**: Cloud hosting platform
 
-## Key Adjustments from Initial Proposal
-1. Simplified to web-only delivery (removed mobile app components)
-2. Consolidated microservices into modular monolith for web scale
-3. Optimized for browser-based interactions and campus network environment
+## Data structures and interfaces
 
-## Architecture Diagram (Web Focus)
+### Database Schema
 
-+-----------------------------------------------------------------------+
-|                            Client Layer                               |
-|   +-------------------------------------------------------------+     |
-|   |                 Static HTML Pages                           |     |
-|   |   (Enhanced with JavaScript for dynamic functionality)      |     |
-|   +-------------------------------------------------------------+     |
-|   | Components:                                                  |     |
-|   | - booking.html              | - search.html                  |     |
-|   | - calendar.css             | - maps.js                      |     |
-|   | - admin-dashboard.js       | - messaging.js                 |     |
-|   +-------------------------------------------------------------+     |
-+-----------------------------------------------------------------------+
-                                   |
-                                   | HTTP/HTTPS (AJAX/Fetch API)
-                                   v
-+-----------------------------------------------------------------------+
-|                            API Layer                                  |
-|   +-------------------------------------------------------------+     |
-|   |                      Django REST Framework                   |     |
-|   |                   (Python backend API)                       |     |
-|   +-------------------------------------------------------------+     |
-|   | Features:                                                    |     |
-|   | - Session Authentication    | - Form Validation             |     |
-|   | - CSRF Protection           | - API Endpoints               |     |
-|   +-------------------------------------------------------------+     |
-+-----------------------------------------------------------------------+
-                                   |
-                                   | Internal calls
-                                   v
-+-----------------------------------------------------------------------+
-|                            Service Layer                             |
-|   +---------------------+  +---------------------+  +---------------+ |
-|   | Scheduling Service  |  | Navigation Service  |  | User Service  | |
-|   +---------------------+  +---------------------+  +---------------+ |
-+-----------------------------------------------------------------------+
-                                   |
-                                   | Data access
-                                   v
-+-----------------------------------------------------------------------+
-|                            Data Layer                                |
-|   +---------------------+  +---------------------+                  |
-|   | PostgreSQL          |  | Redis Cache         |                  |
-|   +---------------------+  +---------------------+                  |
-+-----------------------------------------------------------------------+
+```mermaid
+classDiagram
+    class User {
+        <<abstract>>
+        +uuid id PK
+        +string email
+        +string passwordHash
+        +string firstName
+        +string lastName
+        +string profileImage
+        +enum role
+        +datetime createdAt
+        +datetime updatedAt
+        +login(email, password) bool
+        +updateProfile(userData) bool
+    }
+    
+    class Student {
+        +uuid id PK
+        +string studentNumber
+        +string course
+        +getAppointments() list
+        +requestAppointment(lecturerId, details) bool
+        +cancelAppointment(appointmentId) bool
+    }
+    
+    class Lecturer {
+        +uuid id PK
+        +string staffNumber
+        +string department
+        +string officeLocation
+        +string telephoneNumber
+        +string[] courses
+        +getAvailability() list
+        +setAvailability(slots) bool
+        +getAppointments() list
+        +respondToAppointment(appointmentId, status) bool
+    }
+    
+    class Appointment {
+        +uuid id PK
+        +uuid studentId FK
+        +uuid lecturerId FK
+        +date appointmentDate
+        +time startTime
+        +time endTime
+        +string purpose
+        +string additionalDetails
+        +enum status
+        +enum meetingType
+        +datetime createdAt
+        +datetime updatedAt
+        +notify() void
+        +reschedule(newDateTime) bool
+        +cancel() bool
+    }
+    
+    class Availability {
+        +uuid id PK
+        +uuid lecturerId FK
+        +int dayOfWeek
+        +time startTime
+        +time endTime
+        +bool isRecurring
+        +date specificDate
+        +datetime createdAt
+        +datetime updatedAt
+    }
+    
+    class Message {
+        +uuid id PK
+        +uuid senderId FK
+        +uuid receiverId FK
+        +string content
+        +datetime timestamp
+        +bool isRead
+        +markAsRead() bool
+    }
+    
+    class Notification {
+        +uuid id PK
+        +uuid userId FK
+        +string content
+        +string type
+        +uuid relatedEntityId
+        +datetime timestamp
+        +bool isRead
+        +markAsRead() bool
+    }
+    
+    class Location {
+        +uuid id PK
+        +string buildingName
+        +string roomNumber
+        +string description
+        +float latitude
+        +float longitude
+        +int floorLevel
+        +getDirections(fromLatLng) object
+    }
+    
+    User <|-- Student
+    User <|-- Lecturer
+    Student "1" -- "*" Appointment: books
+    Lecturer "1" -- "*" Appointment: manages
+    Lecturer "1" -- "*" Availability: sets
+    User "1" -- "*" Message: sends
+    User "1" -- "*" Message: receives
+    User "1" -- "*" Notification: receives
+    Lecturer "1" -- "1" Location: has office
+    Appointment "*" -- "1" Location: takes place at
+```
+## Authentication and Authorization Flow
 
-### Frontend Structure
-1. **HTML Pages**:
-   - `index.html` - Main landing page
-   - `login.html` - Authentication
-   - `booking.html` - Appointment scheduling
-   - `search.html` - Lecturer search
-   - `admin.html` - Admin dashboard
+1. **Initial Access**:
+   - Users arrive at the landing page with user role selection (student/lecturer)
+   - Selection affects the login form and subsequent UI flow
 
-2. **CSS Organization**:
-   - `main.css` - Global styles
-   - `calendar.css` - Booking interface styles
-   - `mobile.css` - Responsive styles
-   - `print.css` - Print-specific styles
+2. **Authentication Process**:
+   - User submits credentials (student/staff number and password)
+   - Backend verifies credentials against database
+   - Upon successful authentication, a JWT token is generated with role information
+   - Token is returned to client and stored securely (HTTP-only cookie)
 
-3. **JavaScript Modules**:
-   - `auth.js` - Authentication handling
-   - `calendar.js` - Date/time picker logic
-   - `api.js` - AJAX request wrapper
-   - `search.js` - Lecturer search functionality
-   - `maps.js` - Campus navigation
+3. **Authorization**:
+   - JWT contains user role and permissions
+   - API endpoints verify token validity and role permissions
+   - Different views and capabilities are presented based on role
+   - Backend validates permissions for each request
 
-### Backend Integration Approach
-1. **Form Handling**:
-   - Traditional form submissions with server-side rendering
-   - Progressive enhancement with AJAX where beneficial
+4. **Session Management**:
+   - JWT expiry set to reasonable timeframe (e.g., 24 hours)
+   - Redis used to store token blacklist for logged-out users
+   - Refresh token implementation for seamless experience
 
-2. **Authentication Flow**:
-   - Session-based authentication
-   - CSRF tokens for form protection
-   - JavaScript-enhanced validation
-   - 
-## Security Considerations
-
-1. **Authentication**
-   - Dual JWT + session cookie approach
-   - Role-based access control
-   - Secure password recovery flow
-
-2. **Data Protection**
-   - Encryption of sensitive data
-   - Audit logging for all booking changes
-   - Regular security patching
-
-3. **Compliance**
-   - Adherence to university data policies
-   - GDPR principles for personal data
-   - Accessibility standards (WCAG 2.1)
-
-## Development Workflow
-
-1. **Version Control**: Git with GitHub/GitLab
-2. **CI/CD Pipeline**:
-   - Automated testing (Jest, pytest)
-   - Containerized deployment (Docker)
-   - Staging environment mirroring production
-3. **Monitoring**:
-   - Application performance monitoring
-   - Error tracking
-   - Usage analytics
+5. **Security Measures**:
+   - HTTPS for all communications
+   - CSRF token implementation
+   - Rate limiting on authentication endpoints
+   - Password hashing using bcrypt
+   - Input validation on all endpoints
