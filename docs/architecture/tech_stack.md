@@ -1,84 +1,66 @@
 # Technology Stack
 
-### Backend: Python (Django and Django REST Framework)
-### Frontend: HTML, CSS & JavaScript 
-### Database: PostgreSQL  
-### Caching Layer : Redis
+## Stack Overview
 
+- **Backend:** Node.js with Express (TypeScript)
+- **Frontend:** React.js with Vite
+- **Styling:** Tailwind CSS
+- **Database:** PostgreSQL
+- **ORM:** Prisma
+- **API Communication:** REST (planned GraphQL support)
+- **Authentication:** JWT-based auth (via Express middleware)
+- **Hosting:**
+  - **Frontend:** Vercel
+  - **Backend & Database:** Railway
 
 ## Justification
 
-### Backend
-Django is a powerful, high-level Python web framework that allows for rapid development and clean,
-pragmatic design. Combined with Django REST Framework, it gives us everything we need to build a secure, 
-scalable backend API with less code and more built-in features.
+### Backend: Node.js with Express (TypeScript)
+- **Node.js** is a non-blocking, event-driven runtime ideal for scalable and lightweight backend services.
+- **Express** provides a minimalist yet powerful routing and middleware framework.
+- **TypeScript** adds static typing to JavaScript, improving code reliability and maintainability.
+- The use of middleware, route handlers, and modular architecture encourages clean code organization.
 
+### Frontend: React.js with Vite
+- **React** allows the development of dynamic, component-driven UIs with efficient DOM updates.
+- **Vite** offers a fast, modern development environment with instant hot module replacement and optimized production builds.
+- Modular code structure makes the frontend maintainable and testable.
+- Ecosystem support includes React Router for routing, Lucide for icons, and hooks for state management.
 
-**We chose it because:**
-- Robust, secure, and scalable  
-- Comes with a powerful built-in admin dashboard  
-- REST API support with built-in session and token authentication  
-- CSRF protection and form validation by default
+### Styling: Tailwind CSS
+- Utility-first approach promotes rapid styling directly within JSX.
+- Responsive design is easier to implement without leaving the component scope.
+- Integrates seamlessly with Vite and React.
 
-  
-### Frontend
-We're keeping things fast, modular, and framework-free. Static HTML pages enhanced with JavaScript modules
-form the UI layer.
+### Database: PostgreSQL
+- An open-source relational database system known for performance and reliability.
+- ACID compliance ensures data integrity, while support for advanced queries and indexing improves performance.
+- Scales well for small- to large-scale applications.
 
-**We chose it because:**
-- Loads fast, especially helpful for students using campus Wi-Fi.
-- Easy to maintain, debug, and improve.
-- Doesn’t require React/Vue, keeping the learning curve low.
-- Easy to maintain and integrate with Django templates 
-- JavaScript modules (like `calendar.js`, `maps.js`, `auth.js`) allow dynamic functionality without complex SPA logic.
+### ORM: Prisma
+- Type-safe database access using auto-generated types based on your schema.
+- Schema migrations and modeling are efficient and developer-friendly.
+- Integrates well with TypeScript and PostgreSQL.
 
-### Database – PostgreSQL
-PostgreSQL is a powerful, open-source relational database known for its reliability, scalability, and
-support for complex queries.
+### API Communication
+- Current setup uses **RESTful APIs** for client-server communication.
+- Future-proofed for **GraphQL** support if client-side flexibility is needed.
+- Secure endpoints with JWT-based authentication.
 
-**We chose it because:**
-- Perfect for handling appointment data, user profiles, and relational logic.
-- Offers advanced features like indexing, foreign key constraints, and stored procedures.
-- Easily integrates with Django’s ORM.
-  
-### Caching Layer
-Redis is used to improve performance and responsiveness by caching frequent queries(e.g availability lookups) 
-and storing session data.
+### Authentication: JWT (JSON Web Tokens)
+- Stateless, token-based authentication suitable for modern SPAs.
+- Simplifies session handling and API security.
 
-**We chose it because:**
-- Extremely fast in-memory data storage.
-- Reduces load on the main database.
-- Ideal for tracking user sessions, lecturer statuses, and real-time availability.
+### Hosting
 
-**User Cases:**
-- Caching booking slots  
-- Faster access to frequently queried data like availability and lecturer status  
+#### Vercel (Frontend)
+- Optimized for frontend frameworks like React and Next.js.
+- Instant preview URLs for branches and pull requests.
+- Built-in CDN, serverless support, and CI/CD pipelines.
 
+#### Railway (Backend & Database)
+- Developer-centric cloud platform for backend APIs and databases.
+- One-click deployments, secrets management, and auto-scaling.
+- PostgreSQL provisioning built-in.
 
-### API Layer (Also Django)
-
-Handles communication between frontend and backend using Fetch API or AJAX calls.
-
-**Key Features:**
-
-- RESTful endpoints for user, booking, and status data  
-- CSRF-secure form handling  
-- Session-based authentication  
-
-## Service Layer (Internal Modules)
-Our logic is divided into distinct service modules for maintainability:
-
-- **Scheduling Service** – Appointment and calendar logic  
-- **Navigation Service** – Location lookups and directions  
-- **User Service** – Auth, roles, and profiles  
-
-### Hosting Environment
-
-- **Staging:** Heroku (for testing and CI deployments)  
-- **Production:** AWS (EC2, S3, RDS for PostgreSQL)  
-
-**We chose it because**
-- Scalable infrastructure  
-- Supports Docker, Django, and PostgreSQL with ease  
-- Industry standard for cloud reliability and security  
 
