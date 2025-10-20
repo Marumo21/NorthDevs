@@ -4,7 +4,7 @@
 1.	Ms M. Mabapa – Project Manager
 2.	Ms M. Matome– Researcher
 3.	Ms MS. Bopape – Developer
-4.	Mr T. Lebenya – Tester 
+4.	Ms b. Ngxishe – Tester 
 
 ## Project Time line
 
