@@ -3,7 +3,7 @@
      Date : 21 March 2025
      Time : 16:30
      Vanue : Online(Whatsapp)
-     Attendance : MS.BOPAPE,M.MABAPA,M.MATOME,T.LEBENYA
+     Attendance : MS.BOPAPE,M.MABAPA,M.MATOME,B.Ngxishe
      Absent : None
 
 ## Agenda And Topics Discussed
@@ -16,13 +16,13 @@
  - **M. MABAPA** – Project Manager
 - **M.MATOME** – Reseacher
 - **MS. BOPAPE** – Developer
-- **T.LEBENYA**– Tester
+- **B.Ngxishe**– Tester
 
 ## Action Items & Assignments
 
 - **Complete product vision document** – MS.BOPAPE
 - **Wireframe design** – M.MABAPA & M.MATOME
-- **Draft software management plan** – T.LEBENYA
+- **Draft software management plan** – B.Ngxishe
 
 ## Next Meeting & Steps
        Date : 22 March 2025
@@ -36,7 +36,7 @@
       Date : 22 March 2025
       Time : 10:00
      Venue : Online(Zoom)  
-Attendance : MS.BOPAPE,M.MABAPA,M.MATOME,T.LEBENYA
+Attendance : MS.BOPAPE,M.MABAPA,M.MATOME,B.Ngxishe
     Absent : None
 
 ## Agenda And Topics Discussed
@@ -56,7 +56,7 @@ Attendance : MS.BOPAPE,M.MABAPA,M.MATOME,T.LEBENYA
 
 - **Rewrite the UI flow** – MS.BOPAPE
 - **Design lecuturer wireframe and prototype** – M.MABAPA & M.MATOME
-- **Edit the software management plan** – T.LEBENYA
+- **Edit the software management plan** – B.Ngxishe
 
 ## Next Meeting & Steps
        Date : 31 March 2025
