@@ -1,7 +1,7 @@
 # Smart Lecturer Scheduling, Availability & Navigation System
 This Smart Lecturer Scheduling, Availabity and Navigation System  is a smart online appointment scheduling and navigation system that makes it simple for students to schedule an appointment with the Faculty of Natural Sciences, Mathematical Sciences and Computing Department at Walter Sisulu University . This mobile application solves the problem of scheduling and managing appointments depending on user preferences.  The process of manually scheduling user appointments based on availability might occasionally become quite exhausting for the student or staff member.  Therefore, this project provides a useful solution that allows students to explore different booking slots and choose their desired time and date. The slot that has already been booked will be marked and will not be open to anybody else for the designated period of time.  Users can also cancel their reservation at any moment with this system. The slot that has already been booked will be marked and will not be open to anybody else for that period of time.  Users can also cancel their reservation at any moment with this system. The app provides a seamless way to locate lecturers, view their current status (e.g., available, busy, in a meeting), and get directions to their offices.
 
-http://localhost:5175/
+
 
 ## Project Structure
 
